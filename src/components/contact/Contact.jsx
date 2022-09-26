@@ -28,16 +28,16 @@ const Contact = () => {
       <h2>Contact Me</h2>
 
       <div className="container contact__container">
-        {/* <div className="contact__options">
+        { <div className="contact__options">
           <article className='contact__option'>
-            <MdOutlineEmail className='contact__option-icon'/>
+            <BsWhatsapp className='contact__option-icon'/>
             <h4>Email</h4>
             <h5>goofi.frank1@gmail.com</h5>
             <a href="mailto: goofi.frank1@gmail.com" target="__blank">Send a message</a>
           </article>
 
           <article className='contact__option'>
-            <RiMessengerLine className='contact__option-icon'/>
+            <BsWhatsapp className='contact__option-icon'/>
             <h4>Messenger</h4>
             <h5>shivanimadwal</h5>
             <a href="https://www.facebook.com/ashish.negi.12914216" target="__blank">Send a message</a>
@@ -50,7 +50,7 @@ const Contact = () => {
             <a href="https://api.whatsapp.com/send?phone=+919643935426" target ="__blank">Send a message</a>
           </article>
 
-        </div> */}
+        </div> }
 
         {/* <form ref= {form} onSubmit={sendEmail}>
           <input type="text" name='name' placeholder='Your Full Name' required />
