@@ -8,19 +8,19 @@ import {useRef} from 'react';
 
 const Contact = () => {
 
-  // const form = useRef();
+   const form = useRef();
 
-  // const sendEmail = (e) => {
-  //   e.preventDefault();
+   const sendEmail = (e) => {
+     e.preventDefault();
 
-  //   emailjs.sendForm('service_i3oy3p3', 'template_5wdxtma', form.current, 'Xn1s3kSgKNpf4XjfZ')
-  //     .then((result) => {
-  //         console.log(result.text);
-  //     }, (error) => {
-  //         console.log(error.text);
-  //     });
-  //     e.target.reset()
-  // };
+     emailjs.sendForm('service_i3oy3p3', 'template_5wdxtma', form.current, 'Xn1s3kSgKNpf4XjfZ')
+       .then((result) => {
+           console.log(result.text);
+       }, (error) => {
+           console.log(error.text);
+       });
+       e.target.reset()
+   };
 
   return (
     <section id = 'contact'>
