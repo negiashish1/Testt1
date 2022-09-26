@@ -33,14 +33,14 @@ const Contact = () => {
             <AiOutlineMail className='contact__option-icon'/>
             <h4>Email</h4>
             <h5>goofi.frank1@gmail.com</h5>
-            <a href="mailto: goofi.frank1@gmail.com" target="__blank">Send a message</a>
+            <a href="mailto: shivanimadwal.professional@gmail.com" target="__blank">Send a message</a>
           </article>
 
           <article className='contact__option'>
             <GrChat className='contact__option-icon'/>
             <h4>Messenger</h4>
             <h5>shivanimadwal</h5>
-            <a href="https://www.facebook.com/ashish.negi.12914216" target="__blank">Send a message</a>
+            <a href="https://www.facebook.com/" target="__blank">Send a message</a>
           </article>
 
           <article className='contact__option'>
