@@ -4,7 +4,8 @@ import {AiOutlineHome} from 'react-icons/ai'
 import {AiOutlineUser} from 'react-icons/ai'
 import {BiBook} from 'react-icons/bi'
 import {BiMessageSquareDetail} from 'react-icons/bi'
-import {RiServiceLine} from 'react-icons/ri'
+import {TbHeartHandshake} from 'react-icons/ri'
+
 import {useState} from 'react'
 
 const Nav = () => {
@@ -14,8 +15,8 @@ const Nav = () => {
       <a href="#" onClick={() => setActiveNav('#')} className={activeNav === '#' ? 'active' : ''}><AiOutlineHome/></a>
       <a href="#about" onClick={() => setActiveNav('#about')} className={activeNav === '#about' ? 'active' : ''}><AiOutlineUser/></a>
       <a href="#experience" onClick={() => setActiveNav('#experience')} className={activeNav === '#experience' ? 'active' : ''}><BiBook/></a>
-      <a href="#services" onClick={() => setActiveNav('#services')} className={activeNav === 'services' ? 'active' : ''}><BiMessageSquareDetail/></a>
-      <a href="#contact" onClick={()=> setActiveNav('#contact')} className={activeNav === '#contact' ? 'active' : ''}><AiOutlineHome/></a>
+      <a href="#services" onClick={() => setActiveNav('#services')} className={activeNav === 'services' ? 'active' : ''}><TbHeartHandshake/></a>
+      <a href="#contact" onClick={()=> setActiveNav('#contact')} className={activeNav === '#contact' ? 'active' : ''}><BiMessageSquareDetail/></a>
     </nav>
   )
 }
