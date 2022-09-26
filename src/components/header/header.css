@@ -77,4 +77,8 @@ header {
     .header__socials, .scroll__down {
         display: none;
     }
+	
+	.me {
+        padding: 0.5rem 1.5rem 1.5rem 1.5rem;
+    }
 }
