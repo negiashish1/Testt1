@@ -4,7 +4,7 @@ import {AiOutlineHome} from 'react-icons/ai'
 import {AiOutlineUser} from 'react-icons/ai'
 import {BiBook} from 'react-icons/bi'
 import {BiMessageSquareDetail} from 'react-icons/bi'
-import {TbHeartHandshake} from 'react-icons/ri'
+import {TbHeartHandshake} from 'react-icons/tb'
 
 import {useState} from 'react'
 
