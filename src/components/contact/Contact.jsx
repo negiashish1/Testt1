@@ -1,26 +1,26 @@
 import React from 'react'
 import './contact.css'
 import {AiOutlineMail} from 'react-icons/ai'
-//import {RiMessengerLine} from 'react-icons/ri'
+import {TbBrandMessenger} from 'react-icons/tb'
 import {BsWhatsapp} from 'react-icons/bs'
 import emailjs from 'emailjs-com';
 import {useRef} from 'react';
 
 const Contact = () => {
 
-   const form = useRef();
+  const form = useRef();
 
-   const sendEmail = (e) => {
-     e.preventDefault();
+  const sendEmail = (e) => {
+    e.preventDefault();
 
-     emailjs.sendForm('service_i3oy3p3', 'template_5wdxtma', form.current, 'Xn1s3kSgKNpf4XjfZ')
-       .then((result) => {
-           console.log(result.text);
-       }, (error) => {
-           console.log(error.text);
-       });
-       e.target.reset()
-   };
+    emailjs.sendForm('service_i3oy3p3', 'template_5wdxtma', form.current, 'Xn1s3kSgKNpf4XjfZ')
+      .then((result) => {
+          console.log(result.text);
+      }, (error) => {
+          console.log(error.text);
+      });
+      e.target.reset()
+  };
 
   return (
     <section id = 'contact'>
@@ -28,7 +28,7 @@ const Contact = () => {
       <h2>Contact Me</h2>
 
       <div className="container contact__container">
-        { <div className="contact__options">
+        <div className="contact__options">
           <article className='contact__option'>
             <AiOutlineMail className='contact__option-icon'/>
             <h4>Email</h4>
@@ -37,7 +37,7 @@ const Contact = () => {
           </article>
 
           <article className='contact__option'>
-            <BsWhatsapp className='contact__option-icon'/>
+            <TbBrandMessenger className='contact__option-icon'/>
             <h4>Messenger</h4>
             <h5>shivanimadwal</h5>
             <a href="https://www.facebook.com/ashish.negi.12914216" target="__blank">Send a message</a>
@@ -50,7 +50,7 @@ const Contact = () => {
             <a href="https://api.whatsapp.com/send?phone=+919643935426" target ="__blank">Send a message</a>
           </article>
 
-        </div> }
+        </div>
 
         <form ref= {form} onSubmit={sendEmail}>
           <input type="text" name='name' placeholder='Your Full Name' required />
