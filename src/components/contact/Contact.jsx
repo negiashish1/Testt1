@@ -1,7 +1,7 @@
 import React from 'react'
 import './contact.css'
 import {AiOutlineMail} from 'react-icons/ai'
-import {TbBrandMessenger} from 'react-icons/tb'
+import {RiChatSmile3Line} from 'react-icons/ri'
 import {BsWhatsapp} from 'react-icons/bs'
 import emailjs from 'emailjs-com';
 import {useRef} from 'react';
@@ -37,7 +37,7 @@ const Contact = () => {
           </article>
 
           <article className='contact__option'>
-            <TbBrandMessenger className='contact__option-icon'/>
+            <RiChatSmile3Line className='contact__option-icon'/>
             <h4>Messenger</h4>
             <h5>shivanimadwal</h5>
             <a href="https://www.facebook.com/ashish.negi.12914216" target="__blank">Send a message</a>
