@@ -24,7 +24,7 @@ const data = [
   },
   {
     id: 3,
-    Image: IMG3,
+    image: IMG3,
     title: 'Your Name',
     github: 'https://dribbble.com/',
     demo: 'https://dribbble.com/shots/16947731-Portfolio-Layout'
