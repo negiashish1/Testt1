@@ -6,18 +6,16 @@ import AVTR3 from '../../assets/avatar3.jpg'
 import AVTR4 from '../../assets/avatar4.jpg'
 
 // import Swiper core and required modules 
-import { Pagination, Scrollbar, Navigation} from 'swiper';
+import { Pagination } from 'swiper';
 
 import { Swiper, SwiperSlide } from 'swiper/react';
 
 // Import Swiper styles
-import 'swiper/css';
-import 'swiper/css/navigation';
-import 'swiper/css/scrollbar';
-import 'swiper/css/pagination';
-// import 'swiper/swiper.min.css';
+// import 'swiper/css';
+import 'swiper/swiper.min.css';
 // import 'swiper/modules/pagination/pagination.min.css'
-// import 'swiper/components/pagination/pagination.min.css'
+import 'swiper/components/pagination/pagination.min.css'
+// import 'swiper/css/pagination';
 // import 'swiper/modules/pagination.css';
 
 const data = [
@@ -51,8 +49,10 @@ const Testimonials = () => {
 
       <Swiper className="container testimonials__container"
       // install Swiper modules
-      modules={[Navigation, Pagination, Scrollbar]}
-      spaceBetween={30}
+      modules={[Pagination]}
+      //spaceBetween={40}
+      //slidesPerView={1}
+	  spaceBetween={30}
       slidesPerView={1.2}
       
       pagination={{ clickable: true }}>
